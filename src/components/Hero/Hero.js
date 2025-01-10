@@ -1,6 +1,6 @@
 import styles from './Hero.module.scss';
 
-function Hero() {
+const Hero = () => {
     return (
         <div className={styles.hero}>
         <h1 className={styles.title}>My first React App</h1>

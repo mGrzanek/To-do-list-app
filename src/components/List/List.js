@@ -1,6 +1,6 @@
 import styles from './List.module.scss';
 
-function List(){
+const List = ()=> {
     return(
         <div className={styles.list}>
             <header className={styles.header}>
