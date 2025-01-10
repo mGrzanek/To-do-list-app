@@ -1,9 +1,13 @@
+import styles from './List.module.scss';
+
 function List(){
     return(
-        <div>
-            <header>hings to do<span>soon</span></header>
-            <p>Interesting things I want to check out</p>
-            <section>
+        <div className={styles.list}>
+            <header className={styles.header}>
+                <h2 className={styles.title}>Things to do<span>soon</span></h2>
+            </header>
+            <p className={styles.description}>Interesting things I want to check out</p>
+            <section className={styles.columns}>
                 <article>
                     <h2>Books</h2>
                 </article>
