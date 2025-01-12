@@ -1,0 +1,23 @@
+.cardForm {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .cardForm {
+        flex-direction: column;
+
+        input {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .cardForm {
+        input {
+            width: 70%;
+        }
+    }
+}
