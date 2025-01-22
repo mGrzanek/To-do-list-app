@@ -14,7 +14,8 @@ const ColumnForm = props => {
             type: 'ADD_COLUMN', 
             payload: { 
                 title, 
-                icon } 
+                icon 
+            } 
         });
         setTitle('');
         setIcon('');
