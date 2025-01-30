@@ -10,6 +10,14 @@
     justify-content: space-between;
     align-items: center;
 
+    ul li {
+        display: inline-block;
+
+        .linkActive {
+            color: $color-warning;
+        }
+    }
+
     a {
         color: $color-light;
         text-decoration: none;
