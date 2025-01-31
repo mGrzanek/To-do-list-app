@@ -1,4 +1,5 @@
 import styles from './Column.module.scss';
+import PropTypes from 'prop-types';
 import { getFilteredCards } from '../../redux/store';
 import Card from './../Card/Card';
 import CardForm from './../CardForm/CardForm';
@@ -16,6 +17,12 @@ const Column = ({ id, title, icon }) => {
             <CardForm columnId={id} />
         </article>
     );
+}
+
+Column.propTypes = {
+    id: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    icon: PropTypes.string.isRequired
 }
 
 export default Column;

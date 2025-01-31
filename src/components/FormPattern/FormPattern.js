@@ -1,4 +1,5 @@
 import styles from "./FormPattern.module.scss";
+import PropTypes from 'prop-types';
 import TextInput from "../TextInput/TextInput";
 import Button from "../Button/Button";
 
@@ -18,6 +19,17 @@ const FormPattern = ({ action, title, setTitle, param, setParam, titleValue, par
             <Button>{buttonValue}</Button>
         </form>
     );
+}
+
+FormPattern.propTypes = {
+    action: PropTypes.func.isRequired,
+    title: PropTypes.string.isRequired,
+    setTitle: PropTypes.func.isRequired,
+    param: PropTypes.string.isRequired,
+    setParam: PropTypes.func.isRequired,
+    titleValue: PropTypes.string.isRequired,
+    paramValue: PropTypes.string.isRequired,
+    buttonValue: PropTypes.string.isRequired
 }
 
 export default FormPattern;

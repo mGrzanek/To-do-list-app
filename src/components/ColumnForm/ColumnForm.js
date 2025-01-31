@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useDispatch } from 'react-redux';
 import { addColumn } from "../../redux/store";
+import PropTypes from 'prop-types';
 import FormPattern from "../FormPattern/FormPattern";
 
 const ColumnForm = ({listId}) => {
@@ -24,6 +25,10 @@ const ColumnForm = ({listId}) => {
             buttonValue="Add column" 
         />
     );
+}
+
+ColumnForm.propTypes = {
+    listId: PropTypes.string.isRequired
 }
 
 export default ColumnForm;
