@@ -7,24 +7,22 @@ const ColumnForm = ({listId}) => {
     const dispatch = useDispatch();
     const [title, setTitle] = useState('');
     const [icon, setIcon] = useState('');
-    
+
     const handleSubmit = () => {
         dispatch(addColumn({ title, icon, listId }));
     }
 
     return(
-        <>
-            <FormPattern 
-                title={title} 
-                setTitle={setTitle} 
-                param={icon} 
-                setParam={setIcon} 
-                action={handleSubmit} 
-                titleValue="Title"
-                paramValue="Icon" 
-                buttonValue="Add column" 
-            />
-        </>
+        <FormPattern 
+            title={title} 
+            setTitle={setTitle} 
+            param={icon} 
+            setParam={setIcon} 
+            action={handleSubmit} 
+            titleValue="Title"
+            paramValue="Icon" 
+            buttonValue="Add column" 
+        />
     );
 }
 

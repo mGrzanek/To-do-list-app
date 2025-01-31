@@ -13,18 +13,16 @@ const ListForm = () => {
     }
 
     return(
-        <>
-            <FormPattern
-                title={title}
-                setTitle={setTitle}
-                param={description}
-                setParam={setDescription}
-                action={handleSubmit}
-                titleValue="Title" 
-                paramValue="Description" 
-                buttonValue="Add list"
-            />
-        </>
+        <FormPattern
+            title={title}
+            setTitle={setTitle}
+            param={description}
+            setParam={setDescription}
+            action={handleSubmit}
+            titleValue="Title" 
+            paramValue="Description" 
+            buttonValue="Add list"
+        />
     );
 }
 
