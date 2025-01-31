@@ -9,5 +9,19 @@
     border-radius: $radius;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     font-weight: bold;
+
+    i {
+        padding: 3px;
+        font-size: .9rem;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    
+    .isFavorite {
+        color: $color-sunshine;
+    }
 }
