@@ -1,5 +1,6 @@
 import styles from './List.module.scss';
 import { useParams } from 'react-router';
+import { Navigate } from 'react-router';
 import { useSelector } from 'react-redux';
 import { getColumnsByList, getListById } from '../../redux/store';
 import SearchForm from "../SearchForm/SearchForm";
@@ -10,6 +11,7 @@ const List = ()=> {
     const { listId } = useParams();
     const listData = useSelector(state => getListById(state, listId));
     const columns = useSelector(state => getColumnsByList(state, listId));
+    if(!listData) return <Navigate to="/" />
   
     return(
         <div className={styles.list}>

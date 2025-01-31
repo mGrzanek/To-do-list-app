@@ -1,0 +1,17 @@
+.listsForm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    
+
+    span {
+        margin: 10px;
+    }
+}
+
+@media (max-width: 767px) {
+    .listsForm {
+        flex-direction: column;
+    }
+}
