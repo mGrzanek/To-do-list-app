@@ -7,8 +7,8 @@ const initialState = {
         },
        {
             id: '2',
-            title: 'Test list',
-            description: 'Lorem Ipsum'
+            title: 'Places to visit',
+            description: 'Interesting places I want to visit'
        }
      ],
     columns: [
@@ -33,8 +33,8 @@ const initialState = {
         {
             id: '4',
             listId: '2',
-            title: 'Songs',
-            icon: 'music',
+            title: 'Trips',
+            icon: 'suitcase',
         },
     ],
   
