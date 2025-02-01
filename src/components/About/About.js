@@ -1,11 +1,16 @@
+import styles from "./About.module.scss";
 import PageTitle from "../PageTitle/PageTitle";
 
 const About = () => {
     return(
-        <div>
+        <section>
             <PageTitle>About</PageTitle>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in nulla porta ligula dignissim vehicula. Quisque neque purus, tristique eget elementum at, sagittis ac arcu. Aenean molestie ultricies risus, vel condimentum ex suscipit.</p>
-        </div>
+            <div className={styles.about}>
+                <p>This app will let you manage what you want to do! You can plan things to do, travel, shopping or many more according to your needs.</p> 
+                <p> Create new lists, bookmarks and add tasks. You can add priority tasks to favorites, making it easier for you or other associates to remember them. You can easily delete completed tasks.</p> 
+                <p>Let planning become more enjoyable now!</p>
+            </div>
+        </section>
     );
 }
 
