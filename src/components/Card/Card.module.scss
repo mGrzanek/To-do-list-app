@@ -13,11 +13,13 @@
     font-weight: bold;
 
     i {
-        padding: 3px;
+        padding: 3px 5px;
         font-size: .9rem;
+        color: lighten($color-dark, 15%);
 
         &:hover {
             cursor: pointer;
+            color: darken($color-dark, 25%);
         }
     }
     
