@@ -7,7 +7,7 @@ const initialState = {
         },
        {
             id: '2',
-            title: 'Places to visit',
+            title: 'Places to visit...',
             description: 'Interesting places I want to visit'
        }
      ],
