@@ -1,11 +1,10 @@
 import { useState } from "react";
 import { useDispatch } from 'react-redux';
-import { addCard } from "../../redux/store";
+import { addCard } from "../../redux/cardsReducer";
 import PropTypes from 'prop-types';
 import TextInput from "./../TextInput/TextInput";
 import Button from './../Button/Button';
 import styles from './CardForm.module.scss';
-import Card from "../Card/Card";
 
 const CardForm = ({ columnId }) => {
     const dispatch = useDispatch();

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useDispatch } from 'react-redux';
-import { addColumn } from "../../redux/store";
+import { addColumn } from "../../redux/columnsReducer";
 import PropTypes from 'prop-types';
 import FormPattern from "../FormPattern/FormPattern";
 
